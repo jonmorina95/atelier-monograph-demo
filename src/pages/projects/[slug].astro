@@ -6,7 +6,7 @@ const { project } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const asset = (p:string) => `${base}${p}`;
 ---
-<BaseLayout active="projects" title={`${project.title} — Studio Name`} description={project.statement}>
+<BaseLayout active="projects" title={`${project.title} — VENT`} description={project.statement}>
   <section class="detail-head page-section">
     <div class="meta-row"><span class="meta">PROJECT {project.index}</span><span class="meta">{project.location} · {project.year}</span></div>
     <h1 class="display reveal">{project.title}</h1>

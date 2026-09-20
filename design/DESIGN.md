@@ -1,4 +1,4 @@
-# Studio Name — Design System
+# VENT — Design System
 
 This implementation is derived from the supplied Google Stitch export and its `Atelier Monograph` design direction. The Stitch export remains in `design/stitch-export/` as reference material.
 

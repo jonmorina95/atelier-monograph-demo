@@ -40,7 +40,7 @@ export const projects: Project[] = [
       'Material choices are deliberately restrained. Concrete, stone, dark metal and clear glass form a reduced palette that allows proportion, weather and occupation to define the atmosphere.'
     ],
     credits: [
-      ['Lead architect', 'Studio Name'],
+      ['Lead architect', 'VENT'],
       ['Landscape', 'Collaborator'],
       ['Structure', 'Engineer Name'],
       ['Photography', 'Studio Archive']
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       'The building is treated as a thick perimeter around an open center. Visitors move between introverted rooms and framed views into the courtyard, creating a measured alternation between exhibition and pause.',
       'Openings are deliberately sparse and deep. Their proportions make the wall thickness legible and turn daylight into part of the exhibition architecture.'
     ],
-    credits: [['Architect', 'Studio Name'], ['Photography', 'Studio Archive']]
+    credits: [['Architect', 'VENT'], ['Photography', 'Studio Archive']]
   },
   {
     slug: 'basalt-house',
@@ -90,7 +90,7 @@ export const projects: Project[] = [
       'The house is organized as a set of staggered rooms around a vertical circulation core. The stair is both movement and object, anchoring the interior while allowing views to pass around it.',
       'A dark exterior shell contrasts with lighter internal surfaces and timber elements, reinforcing the transition from public landscape to private interior.'
     ],
-    credits: [['Architect', 'Studio Name'], ['Interior', 'Studio Name']]
+    credits: [['Architect', 'VENT'], ['Interior', 'VENT']]
   },
   {
     slug: 'alpine-foundation',
@@ -113,6 +113,6 @@ export const projects: Project[] = [
       'The project is kept intentionally horizontal, allowing the surrounding topography to remain dominant. Internal spaces are arranged along a long circulation line with moments of compression and release.',
       'The architecture is quiet and robust, using a small number of durable materials and precise openings rather than expressive form.'
     ],
-    credits: [['Architect', 'Studio Name'], ['Landscape', 'Collaborator']]
+    credits: [['Architect', 'VENT'], ['Landscape', 'Collaborator']]
   }
 ];

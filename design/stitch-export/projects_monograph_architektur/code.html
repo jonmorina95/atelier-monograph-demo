@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffffff","surface-container-high":"#292a2b","tertiary-fixed":"#e9e0e0","tertiary-fixed-dim":"#cdc5c5","surface-dim":"#121314","primary-fixed":"#e3e2df","surface-tint":"#c7c6c3","outline":"#8f918c","on-tertiary":"#342f30","inverse-primary":"#5e5f5c","on-surface":"#e3e2e3","on-background":"#e3e2e3","surface-container-lowest":"#0d0e0f","outline-variant":"#454843","on-surface-variant":"#c5c7c1","on-tertiary-container":"#696363","on-primary":"#30312e","surface-container-low":"#1b1c1d","primary":"#ffffff","on-secondary-fixed":"#1a1c1a","on-error-container":"#ffdad6","on-secondary-container":"#b8b9b5","primary-fixed-dim":"#c7c6c3","on-primary-fixed":"#1b1c1a","error-container":"#93000a","background":"#121314","surface-container":"#1f2021","on-secondary":"#2f312e","on-primary-container":"#646562","primary-container":"#e3e2df","surface-container-highest":"#343536","surface":"#121314","secondary":"#c7c7c3","on-primary-fixed-variant":"#464744","on-tertiary-fixed-variant":"#4a4646","inverse-surface":"#e3e2e3","surface-bright":"#38393a","surface-variant":"#343536","secondary-container":"#484946","secondary-fixed-dim":"#c7c7c3","on-secondary-fixed-variant":"#464744","tertiary-container":"#e9e0e0","on-error":"#690005","inverse-on-surface":"#303031","secondary-fixed":"#e3e3de","on-tertiary-fixed":"#1e1b1b","error":"#ffb4ab"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"3rem","space-sm":"0.75rem","space-xl":"6rem","gutter":"1px","space-xs":"0.375rem","margin-mobile":"1.25rem","space-md":"1.5rem","gutter-loose":"2rem","margin":"2.5rem"},fontFamily:{"display-hero":["Geist"],"body-default":["Geist"],"body-editorial":["Geist"],"meta-tabular":["Geist"],"display-hero-mobile":["Geist"],"meta-uppercase":["Geist"],"headline-lg":["Geist"],"headline-xl-mobile":["Geist"],"headline-md":["Geist"],"body-compact":["Geist"],"headline-xl":["Geist"]},fontSize:{"display-hero":["8rem",{"lineHeight":"7.5rem","letterSpacing":"-0.04em","fontWeight":"400"}],"body-default":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"-0.005em","fontWeight":"400"}],"body-editorial":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"300"}],"meta-tabular":["0.625rem",{"lineHeight":"0.875rem","letterSpacing":"0.2em","fontWeight":"400"}],"display-hero-mobile":["3.5rem",{"lineHeight":"3.5rem","letterSpacing":"-0.03em","fontWeight":"400"}],"meta-uppercase":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.18em","fontWeight":"500"}],"headline-lg":["2.5rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"400"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"400"}],"headline-md":["1.75rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-compact":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["4.5rem",{"lineHeight":"4.5rem","letterSpacing":"-0.035em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-default text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 z-40 bg-surface-dim border-b border-surface-container-highest flex items-center justify-between px-margin-mobile lg:px-margin"><div class="flex items-center gap-space-sm"><img alt="Monograph Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XfYUW-HHobe0Au85Lb5X-lGjhP2N7CKwXrhMTtAH6MA2y7p7nhJlV0_phNcnYJ6xh_7gwZrmmr2evk8AECxxgGWrlGdJJQp573JitjyWPzQE364i6fS9rFCHrIKOg-RCBtnP-xB7JxL3aYBjzN-prnqHuAHovPFrqJQvRxCBkPkpKJYPMppi8HAP77hF0FdPOmDQuBr-Ua6EXOusbeaUB4jZmZengtha-jGLowDwrgfroxTpF6uyFOnzI"/><span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-on-surface">MONOGRAPH STUDIO</span></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-sm text-outline"><span class="w-1.5 h-1.5 bg-primary inline-block"></span><span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-on-surface-variant">INDEX REF. 2024 / ARCHIVE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="hidden lg:flex fixed left-0 top-0 h-full w-72 bg-surface-dim border-r border-surface-container-highest z-50 flex-col justify-between p-space-md"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs mb-space-xs"><img alt="Monograph Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XfYUW-HHobe0Au85Lb5X-lGjhP2N7CKwXrhMTtAH6MA2y7p7nhJlV0_phNcnYJ6xh_7gwZrmmr2evk8AECxxgGWrlGdJJQp573JitjyWPzQE364i6fS9rFCHrIKOg-RCBtnP-xB7JxL3aYBjzN-prnqHuAHovPFrqJQvRxCBkPkpKJYPMppi8HAP77hF0FdPOmDQuBr-Ua6EXOusbeaUB4jZmZengtha-jGLowDwrgfroxTpF6uyFOnzI"/><span class="font-meta-uppercase text-meta-uppercase tracking-[0.18em] uppercase text-primary">STUDIO ARCHITECTS</span></div><div class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-outline pl-space-xs">ZÜRICH / BASEL</div></div><nav class="flex flex-col gap-space-sm my-auto" data-active-classes="border-l border-primary text-primary font-medium pl-space-xs"><a class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="home" href="#">HOME</a><a aria-current="page" class="uppercase tracking-[0.18em] transition-colors py-space-xs border-l border-primary text-primary font-medium pl-space-xs" data-path="projects" href="#">PROJECTS</a><a class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="about" href="#">ABOUT</a><a class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-space-xs" data-path="contact" href="#">CONTACT</a></nav><div class="flex flex-col gap-space-xs pt-space-md border-t border-surface-container-highest"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 bg-primary"></span><span class="font-meta-tabular text-meta-tabular tracking-[0.2em] uppercase text-primary">SYS ACTIVE — UTC+1</span></div><div class="font-meta-tabular text-meta-tabular tracking-[0.2em] uppercase text-outline">EST. 2018 — 47°22′N 8°32′E</div><div class="font-meta-tabular text-meta-tabular tracking-[0.2em] uppercase text-outline-variant">FOLIO SPEC SCALE 1:1</div></div></aside><div class="lg:pl-72"><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Editorial Header Datum Bar -->
+<section class="w-full border-b border-surface-container-highest px-margin-mobile lg:px-margin py-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-y-space-md items-end">
+<!-- Left Column: Studio Register & Filter Matrix -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-outline">
+<span class="w-1.5 h-1.5 bg-primary inline-block"></span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-on-surface-variant">ARCHIVE REGISTER / FOLIO EDITION 08</span>
+</div>
+<!-- Filter Taxonomy -->
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs pt-space-xs">
+<button class="filter-btn group text-left relative pb-1 font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary" data-filter="all" type="button">
+<span>ALL (14)</span>
+<span class="absolute bottom-0 left-0 w-full h-[1px] bg-primary transition-all duration-200"></span>
+</button>
+<button class="filter-btn group text-left relative pb-1 font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-outline hover:text-primary transition-colors" data-filter="cultural" type="button">
+<span>CULTURAL (04)</span>
+<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span>
+</button>
+<button class="filter-btn group text-left relative pb-1 font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-outline hover:text-primary transition-colors" data-filter="residential" type="button">
+<span>RESIDENTIAL (06)</span>
+<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span>
+</button>
+<button class="filter-btn group text-left relative pb-1 font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-outline hover:text-primary transition-colors" data-filter="public" type="button">
+<span>PUBLIC (04)</span>
+<span class="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-200 group-hover:w-full"></span>
+</button>
+</div>
+</div>
+<!-- Center Metronome Datum: Coordinate Reference -->
+<div class="hidden lg:flex lg:col-span-2 flex-col gap-space-xs pb-1 border-l border-surface-container-highest pl-space-md">
+<span class="font-meta-tabular text-meta-tabular text-outline uppercase tracking-[0.2em]">VIEWPORT / 12-COL ASYMMETRIC</span>
+<span class="font-meta-tabular text-meta-tabular text-on-surface-variant uppercase tracking-[0.2em]">TECTONIC SCALE 1:1</span>
+</div>
+<!-- Right Column: Oversized Swiss Grotesque Title -->
+<div class="lg:col-span-5 flex lg:justify-end items-end">
+<h1 class="font-headline-xl text-headline-xl text-primary uppercase tracking-[-0.04em] leading-none select-none">
+          PROJECTS
+        </h1>
+</div>
+</div>
+</section>
+<!-- Technical Metric Strip -->
+<section class="w-full border-b border-surface-container-highest px-margin-mobile lg:px-margin py-space-xs flex items-center justify-between text-outline bg-surface-dim">
+<div class="flex items-center gap-space-md">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">INDEX MONO 2018–2024</span>
+<span class="hidden sm:inline font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-outline-variant">/</span>
+<span class="hidden sm:inline font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">FOLIO SPEC. SHEET REF. 994-CH</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">ARRANGED CHRONO</span>
+<span class="w-2 h-2 border border-surface-container-highest bg-surface-container"></span>
+</div>
+</section>
+<!-- Irregular Editorial Masonry Grid -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-lg">
+<div class="flex flex-col gap-space-lg" id="project-matrix">
+<!-- ITEM 1: Vals Cultural Pavilion (Wide Panoramic 16:9 / 1.79) -->
+<article class="project-card group cursor-pointer" data-category="cultural">
+<div class="grid grid-cols-1 lg:grid-cols-12 border border-surface-container-highest bg-surface-dim transition-colors duration-300 hover:border-primary">
+<!-- Image Block: 8 cols -->
+<div class="lg:col-span-8 overflow-hidden bg-surface-container-low border-b lg:border-b-0 lg:border-r border-surface-container-highest">
+<div class="relative aspect-[16/9] w-full overflow-hidden">
+<img alt="Vals Cultural Pavilion in Graubünden" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbk9l2l4zD8kJYzlK2zcvQyGztIFTIcTF81u8lhZC_5cumSeUfNBmmSc0cQ244AZDVcIigO4yopJun6xzx4d9BJInBcT7cYk3KD2h8QePTV2v5YLg7i2-6r2devP3bnyWsZuDt9n8Vdbdf4_YGv2mZCD-i5XvOAf-XXikffnHCDhmKxT4NZCXfowKTy9xqzyceJjmU27UVNSdGDWcR_52wB0GVCuDsr2MZP7ZnYLszFpAvcMOdcMouGQ"/>
+<div class="absolute top-space-sm left-space-sm bg-surface-dim/90 px-space-xs py-0.5 border border-surface-container-highest">
+<span class="font-meta-tabular text-meta-tabular text-primary uppercase tracking-[0.2em]">PLATE 01 // CUL-24</span>
+</div>
+</div>
+</div>
+<!-- Editorial & Specification Rail: 4 cols -->
+<div class="lg:col-span-4 p-space-md lg:p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">REF 01 / CULTURAL</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">2024</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-space-xs">
+                Vals Cultural Pavilion
+              </h2>
+<p class="font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">
+                Graubünden, Switzerland
+              </p>
+<div class="w-full h-[1px] bg-surface-container-highest my-space-xs"></div>
+<p class="font-body-compact text-body-compact text-outline leading-relaxed">
+                Monolithic board-formed raw concrete pavilion embedding into the alpine topography. Water reflection axis articulating spatial mass against high-altitude morning mist.
+              </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-meta-tabular text-meta-tabular text-outline uppercase tracking-[0.2em]">46°37′N 9°10′E</span>
+<span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary group-hover:underline">INSPECT FOLIO →</span>
+</div>
+</div>
+</div>
+</article>
+<!-- ROW 2: Asymmetric Split (Item 2 Portrait + Item 3 Landscape/Documentary) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- ITEM 2: Villa Limestone (Portrait 3:4 / 0.75) -->
+<article class="project-card group cursor-pointer lg:col-span-5" data-category="residential">
+<div class="flex flex-col border border-surface-container-highest bg-surface-dim h-full transition-colors duration-300 hover:border-primary">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-low border-b border-surface-container-highest">
+<img alt="Villa Limestone in Tuscany" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBvAxGwSE74X3tOGAaKd8nF6bCOiOHV2uIgSFwIZ6PzJISeEKFSxeGICS6c7QBkw5awzlkrDhVOhxslHPN3qFx9FaTU9rtVsJVV9SLYKKbQVZFz5jXpEXiQ65bb5iUUf2plxcvbJ6k1QgItWq1Fye1ndB-npipyTg_md9wWGTymptc70JIMjSyxtixDyLJqO0KYAIFKl7WkkBslBIK_diO1AvEnwYDEB_piSqylJSW6W153yI7Ht2ZQ"/>
+<div class="absolute top-space-sm left-space-sm bg-surface-dim/90 px-space-xs py-0.5 border border-surface-container-highest">
+<span class="font-meta-tabular text-meta-tabular text-primary uppercase tracking-[0.2em]">PLATE 02 // RES-23</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-outline">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">REF 02 / RESIDENTIAL</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">2023</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-space-xs">
+                  Villa Limestone
+                </h2>
+<p class="font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">
+                  Tuscany, Italy
+                </p>
+<p class="font-body-compact text-body-compact text-outline leading-relaxed mt-space-xs">
+                  Continuous honed travertine volumes and skylight shafts channeling linear sunlight apertures onto unyielding ground concrete planes.
+                </p>
+</div>
+<div class="pt-space-sm mt-space-md border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-meta-tabular text-meta-tabular text-outline uppercase tracking-[0.2em]">43°21′N 11°08′E</span>
+<span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary group-hover:underline">VIEW SPEC [02]</span>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM 3: Alpine Cultural Foundation (Monolithic 16:9 / 1.79) -->
+<article class="project-card group cursor-pointer lg:col-span-7 flex flex-col" data-category="cultural">
+<div class="flex flex-col border border-surface-container-highest bg-surface-dim h-full transition-colors duration-300 hover:border-primary">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container-low border-b border-surface-container-highest">
+<img alt="Alpine Cultural Foundation in St. Moritz" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0" data-alt="Monolithic dark concrete and black timber alpine cultural foundation building anchored into a snowy mountain clearing in St. Moritz Switzerland, surrounded by dense snow-covered pine forests, dramatic winter overcast sky with thick alpine fog, architectural monograph photography in the style of Swiss minimalists." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_uzNXXVgtqyxzPJXKqGdMdmGF3ZyySLCSIyKdkh3DNDbJ1Dcyk4xC2W-XLIFc8sHEqAdLs7PAKf38Ls0fZPlivKzqTvwBLjNIrh0kFbDGc0fXlFu0_pnjxi_OB2Iff19A8UNp5b1qqEbXG5jv-f4BFbdvch8tr32yc93ziliti5j9WyMcNYcAZcF2Edg8o2r1HSilbM2kmUHtiL5hvBDZl7ZITlbTTLyom5a_a_0vZ8upLQyfh_M1ow"/>
+<div class="absolute top-space-sm left-space-sm bg-surface-dim/90 px-space-xs py-0.5 border border-surface-container-highest">
+<span class="font-meta-tabular text-meta-tabular text-primary uppercase tracking-[0.2em]">PLATE 03 // CUL-24</span>
+</div>
+</div>
+<div class="p-space-md lg:p-space-lg flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-outline">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">REF 03 / CULTURAL</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">2024</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-space-xs">
+                  Alpine Cultural Foundation
+                </h2>
+<p class="font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">
+                  St. Moritz, Switzerland
+                </p>
+<p class="font-body-compact text-body-compact text-outline leading-relaxed mt-space-xs">
+                  Charred timber siding and board-cast concrete podium forming an austere winter retreat. Designed for acoustic performance and preservation of rare illuminated manuscripts.
+                </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-meta-tabular text-meta-tabular text-outline uppercase tracking-[0.2em]">46°29′N 9°50′E</span>
+<span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary group-hover:underline">VIEW SPEC [03]</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- ROW 3: Asymmetric Split (Item 4 Portrait + Item 5 Documentary 4:3) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- ITEM 4: Casa Basaltica Vertical (Portrait 3:4 / 0.75) -->
+<article class="project-card group cursor-pointer lg:col-span-5" data-category="residential">
+<div class="flex flex-col border border-surface-container-highest bg-surface-dim h-full transition-colors duration-300 hover:border-primary">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-low border-b border-surface-container-highest">
+<img alt="Casa Basaltica Vertical in Basel" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXUfssEwPwREFeK_WHJKv7pfKkPQE3iTJRWUgxRq07cmlQpadiz7JfDqJBH1R6WVKWuNl4Ek7mfBDnkV-vltpPhidOedTCQTRy3vG0Ei2JMZf1eitDbO-OqhumKIm-5oKpemXKjwTid0xQOGzDwNJHgEkckajJ6e7Za8Aafrrgf0MMHXc-46L6agnNGnGg4uugv86AyCYidQwgD8fh7l98QrpAytHQWNrgr0jQWTYjfmmJvtcczPoHWg"/>
+<div class="absolute top-space-sm left-space-sm bg-surface-dim/90 px-space-xs py-0.5 border border-surface-container-highest">
+<span class="font-meta-tabular text-meta-tabular text-primary uppercase tracking-[0.2em]">PLATE 04 // RES-22</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-outline">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">REF 04 / RESIDENTIAL</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">2022</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-space-xs">
+                  Casa Basaltica Vertical
+                </h2>
+<p class="font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">
+                  Basel, Switzerland
+                </p>
+<p class="font-body-compact text-body-compact text-outline leading-relaxed mt-space-xs">
+                  A 5-story vertical townhouse structured around an internal helical stair carved from dark volcanic basalt and finished with brushed raw brass mechanics.
+                </p>
+</div>
+<div class="pt-space-sm mt-space-md border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-meta-tabular text-meta-tabular text-outline uppercase tracking-[0.2em]">47°33′N 7°35′E</span>
+<span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary group-hover:underline">VIEW SPEC [04]</span>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM 5: Kunsthalle Travertine Courtyard (Documentary 4:3 / 1.34) -->
+<article class="project-card group cursor-pointer lg:col-span-7 flex flex-col" data-category="public">
+<div class="flex flex-col border border-surface-container-highest bg-surface-dim h-full transition-colors duration-300 hover:border-primary">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-low border-b border-surface-container-highest">
+<img alt="Kunsthalle Travertine Courtyard in Copenhagen" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVhcxBg7V425zS_FsTbFbtpFoRG-po28oLzKtCtWDmLZqPxvSs8SEGXAGj5hrteL9Mi1A4yHOn13r1gVAMQXTIgyBxCi7c9bqZ5xzivb4J4xtl_wcsP0Jdh-FxfivpmMeJk_pTQKtPqWqpvv7AFehvRMEl-ck3AvzkMSNzjc0ZAtppuNadPbYBcLzBOTZcqX1g8fLKtMsVePqKA8cJzfNTqyGaRGzYBHJ75_Bn2ltzvIc_psZmcMBD6Q"/>
+<div class="absolute top-space-sm left-space-sm bg-surface-dim/90 px-space-xs py-0.5 border border-surface-container-highest">
+<span class="font-meta-tabular text-meta-tabular text-primary uppercase tracking-[0.2em]">PLATE 05 // PUB-21</span>
+</div>
+</div>
+<div class="p-space-md lg:p-space-lg flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-outline">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">REF 05 / PUBLIC</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">2021</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-space-xs">
+                  Kunsthalle Travertine Courtyard
+                </h2>
+<p class="font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">
+                  Copenhagen, Denmark
+                </p>
+<p class="font-body-compact text-body-compact text-outline leading-relaxed mt-space-xs">
+                  Civic institutional courtyard enclosed by monolithic travertine piers with a calm shallow water basin and isolated solitary birch tree reflecting diffuse Nordic daylight.
+                </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-meta-tabular text-meta-tabular text-outline uppercase tracking-[0.2em]">55°40′N 12°34′E</span>
+<span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary group-hover:underline">VIEW SPEC [05]</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Complete Tabular Monograph Index (Full Archive 14 Line Items) -->
+<section class="w-full border-t border-surface-container-highest px-margin-mobile lg:px-margin pt-space-lg pb-space-xl bg-surface-dim">
+<div class="flex flex-col gap-space-md">
+<!-- Section Marker -->
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-meta-uppercase text-meta-uppercase uppercase tracking-[0.18em] text-primary">COMPLETE REPERTORY / 2018–2024</span>
+</div>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-outline">14 RECORDS TOTAL</span>
+</div>
+<!-- Tabular Table -->
+<div class="w-full divide-y divide-surface-container-highest border-b border-surface-container-highest">
+<!-- Row 01 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="cultural">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">01</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Vals Cultural Pavilion</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Graubünden, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Cultural</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2024</span>
+</div>
+<!-- Row 02 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="cultural">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">02</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Alpine Cultural Foundation</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">St. Moritz, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Cultural</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2024</span>
+</div>
+<!-- Row 03 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="residential">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">03</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Villa Limestone</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Tuscany, IT</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Residential</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2023</span>
+</div>
+<!-- Row 04 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="residential">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">04</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Casa Basaltica Vertical</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Basel, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Residential</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2022</span>
+</div>
+<!-- Row 05 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="public">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">05</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Kunsthalle Travertine Courtyard</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Copenhagen, DK</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Public</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2021</span>
+</div>
+<!-- Row 06 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="residential">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">06</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Engadin Granary Transformation</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Zuoz, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Residential</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2021</span>
+</div>
+<!-- Row 07 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="public">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">07</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Münsterplatz Civic Pavilion</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Basel, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Public</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2020</span>
+</div>
+<!-- Row 08 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="cultural">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">08</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Aarau Archive for Modern Drawings</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Aarau, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Cultural</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2020</span>
+</div>
+<!-- Row 09 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="residential">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">09</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Lake Zurich Glass Peristyle</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Erlenbach, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Residential</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2019</span>
+</div>
+<!-- Row 10 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="public">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">10</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Neuchâtel Funicular Canopy</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Neuchâtel, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Public</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2019</span>
+</div>
+<!-- Row 11 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="residential">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">11</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Kranich House on the Rhine</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Schaffhausen, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Residential</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2019</span>
+</div>
+<!-- Row 12 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="cultural">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">12</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Monograph Studio Exhibition Room</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Zürich, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Cultural</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2018</span>
+</div>
+<!-- Row 13 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="residential">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">13</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Albispass Mountain Refuge</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Albis, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Residential</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2018</span>
+</div>
+<!-- Row 14 -->
+<div class="tabular-item group py-space-sm grid grid-cols-12 items-baseline text-on-surface hover:bg-surface-container-low px-space-xs transition-colors cursor-pointer" data-category="public">
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-outline group-hover:text-primary">14</span>
+<span class="col-span-6 sm:col-span-5 font-body-default text-body-default text-primary group-hover:underline">Limmat River Stepped Promenade</span>
+<span class="hidden sm:inline-block sm:col-span-3 font-meta-uppercase text-meta-uppercase text-on-surface-variant uppercase tracking-[0.18em]">Zürich, CH</span>
+<span class="col-span-2 sm:col-span-2 font-meta-uppercase text-meta-uppercase text-outline uppercase tracking-[0.18em]">Public</span>
+<span class="col-span-2 sm:col-span-1 font-meta-tabular text-meta-tabular text-right text-outline group-hover:text-primary">2018</span>
+</div>
+</div>
+<!-- Studio Colophon / Technical Datum Footer Note -->
+<div class="pt-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-outline-variant">TOTAL FOOTPRINT:</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-primary">38,420 SQM MONOGRAPHIC ARCHIVE</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em]">FOLIO SPEC REV. 4.1</span>
+<span class="font-meta-tabular text-meta-tabular uppercase tracking-[0.2em] text-primary">MONOGRAPH ARCHITECTURE AG</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side Interactive Filter Mechanism -->
+<script>
+    (function() {
+      const buttons = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.project-card');
+      const rows = document.querySelectorAll('.tabular-item');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Style update on buttons
+          buttons.forEach(b => {
+            b.classList.remove('text-primary');
+            b.classList.add('text-outline');
+            const line = b.querySelector('span:last-child');
+            if (line) {
+              line.classList.remove('w-full');
+              line.classList.add('w-0');
+            }
+          });
+
+          btn.classList.add('text-primary');
+          btn.classList.remove('text-outline');
+          const activeLine = btn.querySelector('span:last-child');
+          if (activeLine) {
+            activeLine.classList.remove('w-0');
+            activeLine.classList.add('w-full');
+          }
+
+          // Filter Visual Cards
+          cards.forEach(card => {
+            const cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          // Filter Tabular Rows
+          rows.forEach(row => {
+            const cat = row.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main></div></body></html>

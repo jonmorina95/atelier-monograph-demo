@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout active="contact" title="Contact — Studio Name">
+  <section class="contact page-section">
+    <span class="meta">CONTACT / STUDIO</span>
+    <h1 class="display reveal">LET'S<br/>TALK.</h1>
+    <div class="contact-grid reveal">
+      <div><span class="meta">STUDIO</span><p>Studio Name<br/>Prishtina, Kosovo</p></div>
+      <div><span class="meta">CONTACT</span><p><a href="mailto:hello@studio.com">hello@studio.com</a><br/><a href="tel:+38300000000">+383 00 000 000</a></p></div>
+      <div><span class="meta">SOCIAL</span><p><a href="#">Instagram ↗</a><br/><a href="#">LinkedIn ↗</a></p></div>
+    </div>
+  </section>
+</BaseLayout>
+<style>
+.contact{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto}.contact h1{align-self:center}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.contact-grid>div{background:var(--bg);padding:22px}.contact-grid p{margin:1.2rem 0 0;line-height:1.6;font-size:.88rem;text-transform:uppercase;letter-spacing:.08em}.contact-grid a:hover{color:var(--muted)}
+@media(max-width:767px){.contact{min-height:calc(100svh - 58px)}.contact-grid{grid-template-columns:1fr}}
+</style>

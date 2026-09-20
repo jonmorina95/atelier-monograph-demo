@@ -116,5 +116,3 @@ export const projects: Project[] = [
     credits: [['Architect', 'Studio Name'], ['Landscape', 'Collaborator']]
   }
 ];
-
-export const featuredProjects = projects.slice(0, 4);

@@ -1,24 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const base = import.meta.env.BASE_URL;
+import AboutContent from '../components/AboutContent.astro';
 ---
-<BaseLayout active="about" title="About — Studio Name">
-  <section class="about-intro page-section">
-    <span class="meta">STUDIO / PROFILE</span>
-    <h1 class="display-sm reveal">We design spaces around context, material and everyday life.</h1>
-  </section>
-  <section class="about-grid page-section">
-    <div class="media portrait reveal"><img src={`${base}images/projects/interior-detail.jpg`} alt="Studio work" /></div>
-    <div class="about-copy reveal">
-      <span class="meta">ABOUT</span>
-      <p class="lede-small">Studio Name is a contemporary architecture practice working across residential, cultural and interior projects.</p>
-      <p>Our work begins with close observation of site, climate, material and use. We aim for buildings that feel precise without becoming rigid, and quiet without becoming anonymous.</p>
-      <p>Projects are developed through drawing, models, material studies and ongoing collaboration with clients, engineers and craftspeople.</p>
-      <div class="facts"><div><span class="meta">BASED</span><span>Prishtina, Kosovo</span></div><div><span class="meta">DISCIPLINES</span><span>Architecture / Interiors / Urbanism</span></div></div>
-    </div>
-  </section>
-</BaseLayout>
-<style>
-.about-intro{min-height:72vh;display:grid;grid-template-columns:1fr 3fr;gap:2rem;align-items:end}.about-intro h1{max-width:12ch}.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,7vw,100px);align-items:start}.portrait{aspect-ratio:3/4}.about-copy{display:grid;gap:1.5rem}.lede-small{font-size:clamp(1.4rem,2.5vw,2.4rem);line-height:1.15;letter-spacing:-.03em;font-weight:300;margin:0}.about-copy>p:not(.lede-small){max-width:58ch;color:var(--ink-2);line-height:1.7}.facts{margin-top:3rem;border-top:1px solid var(--line)}.facts div{display:grid;grid-template-columns:1fr 2fr;gap:1rem;padding:12px 0;border-bottom:1px solid var(--line);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
-@media(max-width:767px){.about-intro{min-height:56vh;grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.portrait{aspect-ratio:4/5}.facts div{grid-template-columns:1fr}}
-</style>
+<BaseLayout active="about" title="About — Studio Name"><AboutContent /></BaseLayout>

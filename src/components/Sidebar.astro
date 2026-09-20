@@ -1,11 +1,11 @@
 ---
-const { active = '' } = Astro.props;
+const { active = '', continuous = false } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const items = [
-  ['HOME', base],
-  ['PROJECTS', `${base}projects/`],
-  ['ABOUT', `${base}about/`],
-  ['CONTACT', `${base}contact/`]
+  ['HOME', continuous ? `${base}#home` : base, 'home'],
+  ['PROJECTS', continuous ? `${base}#projects` : `${base}projects/`, 'projects'],
+  ['ABOUT', continuous ? `${base}#about` : `${base}about/`, 'about'],
+  ['CONTACT', continuous ? `${base}#contact` : `${base}contact/`, 'contact']
 ];
 ---
 <aside class="sidebar" aria-label="Primary navigation">
@@ -13,8 +13,8 @@ const items = [
     <span>STUDIO</span><span>NAME</span>
   </a>
   <nav>
-    {items.map(([label, href]) => (
-      <a href={href} class:list={{ active: active === label.toLowerCase() }}>{label}<span></span></a>
+    {items.map(([label, href, section]) => (
+      <a href={href} data-section-link={continuous ? section : undefined} class:list={{ active: active === label.toLowerCase() }}>{label}<span></span></a>
     ))}
   </nav>
   <div class="sidebar-foot">

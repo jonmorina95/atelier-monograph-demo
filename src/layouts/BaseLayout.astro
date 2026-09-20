@@ -1,7 +1,7 @@
 ---
 import Sidebar from '../components/Sidebar.astro';
 import '../styles/global.css';
-const { title = 'Studio Name', description = 'Architecture studio portfolio', active = '' } = Astro.props;
+const { title = 'Studio Name', description = 'Architecture studio portfolio', active = '', continuous = false } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -14,7 +14,7 @@ const { title = 'Studio Name', description = 'Architecture studio portfolio', ac
   </head>
   <body>
     <div class="site-shell">
-      <Sidebar active={active} />
+      <Sidebar active={active} continuous={continuous} />
       <main class="page-main"><slot /></main>
     </div>
     <script is:inline>
@@ -44,6 +44,36 @@ const { title = 'Studio Name', description = 'Architecture studio portfolio', ac
         };
         addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(update); ticking = true; } }, { passive: true });
         update();
+      }
+
+      const flow = document.querySelector('[data-continuous-flow]');
+      if (flow && !reduced) {
+        const stages = [...flow.querySelectorAll('[data-flow-section]')];
+        const links = [...document.querySelectorAll('[data-section-link]')];
+        let ticking = false;
+        document.documentElement.classList.add('has-continuous-flow');
+        const updateFlow = () => {
+          const viewport = window.innerHeight;
+          let activeStage = stages[0];
+          let nearest = Infinity;
+          stages.forEach((stage, index) => {
+            const rect = stage.getBoundingClientRect();
+            const incoming = index ? Math.min(1, Math.max(0, (viewport * .92 - rect.top) / (viewport * .55))) : 1;
+            const next = stages[index + 1];
+            const nextRect = next?.getBoundingClientRect();
+            const outgoing = nextRect ? Math.min(1, Math.max(0, (viewport * .92 - nextRect.top) / (viewport * .55))) : 0;
+            stage.style.setProperty('--flow-in', incoming.toFixed(3));
+            stage.style.setProperty('--flow-out', outgoing.toFixed(3));
+            const distance = Math.abs(rect.top - viewport * .28);
+            if (distance < nearest) { nearest = distance; activeStage = stage; }
+          });
+          const current = activeStage?.dataset.flowSection;
+          links.forEach((link) => link.classList.toggle('active', link.dataset.sectionLink === current));
+          ticking = false;
+        };
+        addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(updateFlow); ticking = true; } }, { passive: true });
+        addEventListener('resize', updateFlow, { passive: true });
+        updateFlow();
       }
     </script>
   </body>

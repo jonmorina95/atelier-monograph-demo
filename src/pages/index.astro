@@ -1,61 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { featuredProjects } from '../data/projects';
-const base = import.meta.env.BASE_URL;
-const asset = (p:string) => `${base}${p}`;
+import HomeContent from '../components/HomeContent.astro';
+import ProjectsContent from '../components/ProjectsContent.astro';
+import AboutContent from '../components/AboutContent.astro';
+import ContactContent from '../components/ContactContent.astro';
 ---
-<BaseLayout active="home" title="Studio Name — Architecture">
-  <section class="hero page-section">
-    <div class="hero-meta meta">ARCHITECTURE / INTERIORS / URBANISM</div>
-    <h1 class="display reveal">Architecture<br/>as measured space.</h1>
-    <div class="hero-bottom">
-      <p class="lede reveal">A contemporary studio working across buildings, interiors and cultural projects.</p>
-      <a class="feature-link reveal" href={`${base}projects/${featuredProjects[0].slug}/`}>
-        <div class="media feature-image" data-parallax="0.035"><img src={asset(featuredProjects[0].cover)} alt={featuredProjects[0].title} /></div>
-        <div class="project-caption"><h3>{featuredProjects[0].title}</h3><span class="meta">{featuredProjects[0].year}</span></div>
-      </a>
-    </div>
-  </section>
-
-  <section class="selected">
-    <div class="selected-heading page-section"><span class="meta">SELECTED WORK / 01—04</span><h2 class="display-sm reveal">Selected projects</h2></div>
-    <div class="project-flow">
-      {featuredProjects.map((p, i) => (
-        <a href={`${base}projects/${p.slug}/`} class:list={['project-block','reveal', `p-${i+1}`]}>
-          <div class="project-index meta">{p.index}</div>
-          <div class="media"><img src={asset(p.cover)} alt={p.title} loading="lazy" /></div>
-          <div class="project-caption"><h3>{p.title}</h3><span class="meta">{p.type} · {p.year}</span></div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="home-end page-section reveal">
-    <p class="meta">STUDIO PROFILE</p>
-    <a href={`${base}about/`} class="display-sm">Context, material,<br/>and everyday life →</a>
-  </section>
+<BaseLayout active="home" continuous title="Studio Name — Architecture">
+  <div class="continuous-flow" data-continuous-flow>
+    <section id="home" class="flow-stage" data-flow-section="home"><div class="flow-content"><HomeContent /></div></section>
+    <section id="projects" class="flow-stage" data-flow-section="projects"><div class="flow-content"><ProjectsContent /></div></section>
+    <section id="about" class="flow-stage" data-flow-section="about"><div class="flow-content"><AboutContent /></div></section>
+    <section id="contact" class="flow-stage" data-flow-section="contact"><div class="flow-content"><ContactContent /></div></section>
+  </div>
 </BaseLayout>
-
 <style>
-.hero { min-height: 100svh; display:grid; grid-template-rows:auto 1fr auto; gap:4rem; }
-.hero-meta { text-align:right; }
-.hero h1 { align-self:center; max-width:11ch; }
-.hero-bottom { display:grid; grid-template-columns:minmax(260px,.7fr) 1.3fr; gap:clamp(32px,7vw,110px); align-items:end; }
-.feature-link { display:block; }
-.feature-image { aspect-ratio:16/9; }
-.selected { border-top:1px solid var(--line); }
-.selected-heading { display:grid; grid-template-columns:1fr 2fr; gap:2rem; align-items:end; }
-.project-flow { display:grid; grid-template-columns:repeat(12,1fr); gap:1px; background:var(--line); border-bottom:1px solid var(--line); }
-.project-block { background:var(--bg); padding:clamp(18px,2vw,30px); position:relative; }
-.project-block .project-index { margin-bottom:.7rem; }
-.p-1 { grid-column:1/8; }
-.p-2 { grid-column:8/13; padding-top:11vw; }
-.p-3 { grid-column:1/6; padding-top:9vw; }
-.p-4 { grid-column:6/13; }
-.p-1 .media,.p-4 .media { aspect-ratio:16/9; }
-.p-2 .media,.p-3 .media { aspect-ratio:4/5; }
-.home-end { min-height:70vh; display:flex; flex-direction:column; justify-content:space-between; }
-.home-end a { align-self:flex-end; margin-top:20vh; }
-@media(max-width:900px){.hero-bottom{grid-template-columns:1fr}.selected-heading{grid-template-columns:1fr}.project-flow{display:block;background:none}.project-block{border-bottom:1px solid var(--line);padding:18px}.p-1,.p-2,.p-3,.p-4{padding-top:18px}.project-block .media{aspect-ratio:4/3}.home-end{min-height:55vh}.home-end a{align-self:auto}}
-@media(max-width:767px){.hero{min-height:auto;padding-top:46px;grid-template-rows:auto auto auto;gap:3.2rem}.hero-meta{text-align:left}.hero h1{font-size:clamp(3rem,17vw,5rem)}.feature-image{aspect-ratio:4/3}.selected-heading{padding-top:48px;padding-bottom:30px}.home-end a{margin-top:22vh}}
+.continuous-flow{isolation:isolate}.flow-stage{position:relative;z-index:1;--flow-in:1;--flow-out:0}.flow-content{position:relative;background:var(--bg);transform-origin:center top}.flow-stage:not(:first-child){margin-top:-12svh;padding-top:12svh}.flow-stage:nth-child(2){z-index:2}.flow-stage:nth-child(3){z-index:3}.flow-stage:nth-child(4){z-index:4}html.has-continuous-flow .flow-stage:not(:first-child) .flow-content{opacity:calc(.62 + var(--flow-in) * .38);transform:translate3d(0,calc((1 - var(--flow-in)) * 36px),0);clip-path:inset(calc((1 - var(--flow-in)) * 5%) 0 0 0);will-change:transform,opacity,clip-path}html.has-continuous-flow .flow-stage:not(:last-child) .flow-content{transform:scale(calc(1 - var(--flow-out) * .015));opacity:calc(1 - var(--flow-out) * .28)}html.has-continuous-flow .flow-stage:not(:first-child):not(:last-child) .flow-content{transform:translate3d(0,calc((1 - var(--flow-in)) * 36px),0) scale(calc(1 - var(--flow-out) * .015));opacity:calc((.62 + var(--flow-in) * .38) * (1 - var(--flow-out) * .28))}@media(max-width:767px){.flow-stage:not(:first-child){margin-top:-7svh;padding-top:7svh}html.has-continuous-flow .flow-stage:not(:first-child) .flow-content{transform:translate3d(0,calc((1 - var(--flow-in)) * 18px),0);clip-path:none}html.has-continuous-flow .flow-stage:not(:last-child) .flow-content{transform:none;opacity:calc(1 - var(--flow-out) * .15)}html.has-continuous-flow .flow-stage:not(:first-child):not(:last-child) .flow-content{transform:translate3d(0,calc((1 - var(--flow-in)) * 18px),0);opacity:calc((.72 + var(--flow-in) * .28) * (1 - var(--flow-out) * .15))}}@media(prefers-reduced-motion:reduce){.flow-stage:not(:first-child){margin-top:0;padding-top:0}.flow-content{clip-path:none!important;opacity:1!important;transform:none!important}}
 </style>

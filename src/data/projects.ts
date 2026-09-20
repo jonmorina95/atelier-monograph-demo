@@ -8,6 +8,7 @@ export type Project = {
   status: string;
   area: string;
   cover: string;
+  shortDescription: string;
   gallery: string[];
   statement: string;
   description: string[];
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     status: 'Concept',
     area: '4,850 m²',
     cover: 'images/projects/brutalist-cultural.jpg',
+    shortDescription: 'A monolithic pavilion shaped by reflection, shadow and alpine mass.',
     gallery: [
       'images/projects/alpine-foundation.jpg',
       'images/projects/interior-detail.jpg',
@@ -54,6 +56,7 @@ export const projects: Project[] = [
     status: 'Completed',
     area: '1,920 m²',
     cover: 'images/projects/courtyard-gallery.jpg',
+    shortDescription: 'A protected courtyard calibrating a sequence of gallery light.',
     gallery: [
       'images/projects/interior-detail.jpg',
       'images/projects/brutalist-cultural.jpg',
@@ -76,6 +79,7 @@ export const projects: Project[] = [
     status: 'In progress',
     area: '620 m²',
     cover: 'images/projects/basalt-stair.jpg',
+    shortDescription: 'A residential study in weight, enclosure and warm interior light.',
     gallery: [
       'images/projects/interior-detail.jpg',
       'images/projects/basalt-stair.jpg',
@@ -98,6 +102,7 @@ export const projects: Project[] = [
     status: 'Study',
     area: '3,100 m²',
     cover: 'images/projects/alpine-foundation.jpg',
+    shortDescription: 'A low foundation building following the terrain through framed views.',
     gallery: [
       'images/projects/alpine-foundation.jpg',
       'images/projects/courtyard-gallery.jpg',
